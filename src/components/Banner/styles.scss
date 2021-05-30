@@ -1,0 +1,28 @@
+.banner {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  align-items: center;
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--text-title);
+    margin-bottom: 20px;
+    line-height: 65px;
+  }
+
+  &__text {
+    color: var(--text-body);
+    line-height: 30px;
+  }
+
+  &__btn {
+    margin-top: 50px;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
