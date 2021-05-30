@@ -1,0 +1,45 @@
+.features {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto 135px;
+  padding: 0px 15px;
+  gap: 170px;
+
+  &__left {
+    img {
+      object-position: 0px -25px;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--text-title);
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    line-height: 30px;
+    color: var(--text-body);
+    margin-bottom: 25px;
+  }
+
+  &__itens {
+    color: var(--text-body);
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    li {      
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  
+}
