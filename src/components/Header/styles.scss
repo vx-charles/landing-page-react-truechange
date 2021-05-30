@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 15px;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu {
+    display: flex;
+    gap: 50px;
+
+    &__link {
+      color: var(--text-body);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
