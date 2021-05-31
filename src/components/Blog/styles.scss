@@ -1,6 +1,8 @@
+@import '../../styles/global.mixins.scss';
+
 .blog-container {
 
-  background: #F6F6F6;
+  background: #FBFBFB;
 
   & .slick-initialized .slick-slide {
     padding: 0 25px;
@@ -13,6 +15,10 @@
     flex-direction: column;
     padding: 185px 15px;
     justify-content: center;
+
+    @include md {
+      padding: 90px 15px 185px;
+    }
 
     &__title {
       font-size: 35px;
@@ -33,6 +39,12 @@
       border-radius: 10px;
       padding: 40px 20px;
       margin-right: 50px;
+      transition: border .2s;
+
+      &:hover {
+        border-color: var(--red);
+        cursor: pointer;
+      }
     }
 
     &__img {
@@ -60,10 +72,8 @@
     }
 
     &__loading {
-      background: var(--bg-blog);
-      color: #000;
+      display: flex;
+      justify-content: center;
     }
-    
   }
-
 }
