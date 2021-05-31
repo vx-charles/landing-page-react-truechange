@@ -6,7 +6,9 @@ export function Features() {
   return (
     <section className="features">
       <div className="features__left">
-        <img src={bannerImg} alt="Banner 2" />
+        <figure>
+          <img className="features__img" src={bannerImg} alt="Banner 2" loading="lazy" />
+        </figure>
       </div>
       <div className="features__right">
         <div className="features__title">
