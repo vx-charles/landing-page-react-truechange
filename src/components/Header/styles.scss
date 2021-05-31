@@ -1,21 +1,170 @@
+@import '../../styles/global.mixins.scss';
+
 header {
   display: flex;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 40px 15px;
+  padding: 40px 25px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  transition: all .4s;
+
+  @include sm {
+    background: var(--bg-header);
+    padding: 20px 25px;
+    margin: 0 auto 30px;
+  }
+
+  .hamburger {
+    display: none;
+    margin-right: 15px;
+
+    @include sm {
+      display: flex;
+    }
+  }
 
   .menu {
     display: flex;
-    gap: 50px;
+    transition: all .4s;
+
+    &__ul {
+      display: flex;
+      gap: 50px;
+      
+      @include sm {
+        gap: 35px;
+        flex-direction: column;
+      }
+    }
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      z-index: 1;
+      background: #fff;
+      padding: 30px 0px;
+      width: 100%;
+      top: 100%;
+      left: 100%;
+      gap: 30px;
+      opacity: 0;
+
+      &.active {
+        left: 0%;
+        opacity: 1;
+      }
+    }
 
     &__link {
       color: var(--text-body);
+      font-size: 16px;
 
       &:hover {
         text-decoration: underline;
       }
     }
   }
+}
+
+.hamburger {
+  width: 25px;
+  height: 18px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background: #000;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(even) {
+  left: 49%;
+  border-radius: 0 9px 9px 0;
+}
+
+.hamburger span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+
+.hamburger span:nth-child(1), .hamburger span:nth-child(2) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(3), .hamburger span:nth-child(4) {
+  top: 8px;
+}
+
+.hamburger span:nth-child(5), .hamburger span:nth-child(6) {
+  top: 16px;
+}
+
+.hamburger.open span:nth-child(1),.hamburger.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2),.hamburger.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(1) {
+  left: 0px;
+  top: 5px;
+}
+
+.hamburger.open span:nth-child(2) {
+  left: calc(50% - 6px);
+  top: 5px;
+}
+
+.hamburger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(5) {
+  left: 0px;
+  top: 12px;
+}
+
+.hamburger.open span:nth-child(6) {
+  left: calc(50% - 6px);
+  top: 12px;
 }
