@@ -1,8 +1,11 @@
+@import './global.mixins.scss';
+
 :root {
   --red: #F53838;
   
   --bg-blog: ##FBFBFB;
   --bg-footer: #2F2F2F;
+  --bg-header: #f7f7f7;
 
   --text-title: #0B132A;
   --text-body: #4F5665;
@@ -18,17 +21,26 @@
 }
 
 html {
-  @media (max-width: 1080px) {
+  @media (max-width: 1024px) {
     font-size: 93.75%; // 16 x 0,9375 = 15px
+    line-height: 93.75%;
   }
 
   @media (max-width: 720px) {
     font-size: 87.5%; // 16 x 0,875 = 14px
   }
+
+  @media (max-width: 375px) {
+    line-height: 115.7%;
+  }
 }
 
 body {
   -webkit-font-smoothing: antialiased;
+}
+
+body, html {
+  overflow-x: hidden;
 }
 
 body, input, textarea, button {
@@ -75,4 +87,84 @@ a {
   font-weight: 700;
   transition: filter .2s;
   box-shadow: 0px 30px 38px -5px rgb(245 56 56 / 35%);
+}
+
+// SLICK SLIDER CSS 
+
+.slick-dots li button:before {
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  color: #DDE0E4;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--red);
+}
+
+.slick-dots {
+  bottom: -60px;
+  left: 25px;
+  text-align: left;
+  margin: 0 5px 10px;
+
+  @include sm {
+    left: 0;
+    text-align: center;
+  }
+}
+
+.slick-next:before, .slick-prev:before {
+  content: url('../assets/arrow.svg');
+  opacity: 1;
+  display: flex;
+  border: 2px solid var(--red);
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.slick-next:before {
+  transform: rotate(180deg);  
+}
+
+.slick-prev:before {
+  transform: rotate(0deg);
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+  filter: brightness(5);
+  background: #800000;
+  transition: all .2s;
+}
+
+.slick-prev, .slick-next {
+  width: 0;
+  height: 0;
+  top: 115%;
+  z-index: 2;
+
+  @include sm {
+    top: 145%;
+  }
+}
+
+.slick-next {
+  left: calc(100% - 105px);
+
+  @include sm {
+    left: calc(50% + 60px);
+  }
+}
+
+.slick-prev {
+  left: calc(100% - 190px);
+
+  @include sm {
+    left: calc(50% - 120px);
+  }
 }
