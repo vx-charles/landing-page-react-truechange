@@ -10,9 +10,15 @@ export function Footer() {
       <div className="footer">
         <img src={logoImg} alt="True Change logo footer" />
         <div className="footer__socials">
-          <img className="footer__img" src={facebookImg} alt="Facebook icon" />
-          <img className="footer__img" src={twitterImg} alt="Twitter icon" />
-          <img className="footer__img" src={instagramImg} alt="Instagram icon" />
+          <a className="footer__link" href="/#">
+            <img className="footer__img" src={facebookImg} alt="Facebook icon" />
+          </a>
+          <a className="footer__link" href="/#">
+            <img className="footer__img" src={twitterImg} alt="Twitter icon" />
+          </a>
+          <a className="footer__link" href="/#">
+            <img className="footer__img" src={instagramImg} alt="Instagram icon" />
+          </a>
         </div>
         <div className="footer__copyright">
           ©2020trechange

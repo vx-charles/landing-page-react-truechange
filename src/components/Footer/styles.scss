@@ -7,23 +7,24 @@ footer {
     align-items: center;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 70px 15px 90px;
+    padding: 70px 25px 90px;
 
     &__socials {
       margin: 70px 0 30px;
+      display: flex;
     }
 
-    &__img:first-child {
-      object-position: 15px;  
-    }
+    &__link {
+      display: flex;
+      transition: filter 0.2s;
 
-    &__img:last-child {
-      object-position: -15px
+      &:hover {
+        filter: brightness(.8);
+      }
     }
 
     &__copyright {
       color: var(--text-footer);
     }
-  }
-  
+  }  
 }
