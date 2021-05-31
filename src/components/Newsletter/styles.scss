@@ -1,6 +1,12 @@
+@import '../../styles/global.mixins.scss';
+
 .newsletter-container {
-  background: #F6F6F6;
-  padding-bottom: 200px;
+  background: #fbfbfb;
+  padding: 0 25px 200px;
+
+  @include md {
+    padding: 0 25px 60px;
+  }
 
   .newsletter {
     display: flex;
@@ -9,20 +15,40 @@
     padding: 52px 70px;
     background: #fff;
     border-radius: 10px;
+    gap: 20px;
+
+    @include lg {
+      padding: 40px 30px;
+    }
+
+    @include md {
+      flex-direction: column;
+      padding: 40px 30px;
+    }
 
     &__left {
       display: flex;
       flex-direction: column;
       width: 37%;
+      transition: all .3s;
+
+      @include md {
+        width: 100%;
+      }
     }
     
     &__right {
       display: flex;
       width: 63%;
       align-items: center;
-      justify-content: flex-end;
-      gap: 5px;
-      position: relative;
+      gap: 5px;      
+      transition: all .3s;
+
+      @include md {
+        width: 100%;
+        flex-direction: column;
+        gap: 35px;
+      }
     }
 
     &__title {
@@ -31,10 +57,23 @@
       line-height: 45px;
       color: var(--text-title);
       margin-bottom: 15px;
+
+      @include lg {
+        font-size: 30px;
+        line-height: 42px;
+      }
     }
     
     &__desc {      
       color: var(--text-body);
+      line-height: 30px;
+    }
+
+    &__group {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
     }
 
     &__input {
@@ -45,6 +84,10 @@
       padding: 15px;
       font-size: 16px;
 
+      @include md {
+        width: 100%;
+      }
+
       &--error {
         border: 1px solid var(--red);
       }
@@ -52,26 +95,28 @@
 
     &__alert {
       position: absolute;
-      top: 78%;
-      left: 10%;
-      color: var(--red);
+      top: 110%;
+      right: 0;
+      width: 316px;
+
+      @include md {
+        width: 100%;
+      }
 
       &--error {
-        position: absolute;
-        top: 78%;
-        left: 10%;
         color: var(--red);
       }
   
       &--success {
-        position: absolute;
-        top: 78%;
-        left: 10%;
         color: rgb(26, 187, 11);
       }
     }
 
     &__btn {
+
+      @include md {
+        width: 100%;
+      }
   
       &:hover {
         filter: brightness(0.9);

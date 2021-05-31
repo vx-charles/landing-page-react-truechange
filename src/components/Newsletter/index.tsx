@@ -46,13 +46,15 @@ export function Newsletter() {
         </div>
 
         <form onSubmit={handleSendNewsletter} className="newsletter__right">
-          <input 
-            className={typeMsg === 'error' ? "newsletter__input newsletter__input--error" : "newsletter__input" }
-            type="text"
-            value={value} 
-            onChange={(e) => setValue(e.target.value)} 
-          />
-          <div className={alertClass}>{alert}</div>
+          <div className="newsletter__group">
+            <input 
+              className={typeMsg === 'error' ? "newsletter__input newsletter__input--error" : "newsletter__input" }
+              type="text"
+              value={value} 
+              onChange={(e) => setValue(e.target.value)} 
+            />
+            <div className={alertClass}>{alert}</div>
+          </div>
           <button type="submit" 
             className="newsletter__btn btn-red"
           >
