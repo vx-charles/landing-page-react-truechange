@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/landing-page-react-truechange/static/css/main.b71aea11.chunk.css",
+    "main.js": "/landing-page-react-truechange/static/js/main.f5508f6d.chunk.js",
+    "main.js.map": "/landing-page-react-truechange/static/js/main.f5508f6d.chunk.js.map",
+    "runtime-main.js": "/landing-page-react-truechange/static/js/runtime-main.fa08f312.js",
+    "runtime-main.js.map": "/landing-page-react-truechange/static/js/runtime-main.fa08f312.js.map",
+    "static/css/2.20e376b6.chunk.css": "/landing-page-react-truechange/static/css/2.20e376b6.chunk.css",
+    "static/js/2.ea058a4d.chunk.js": "/landing-page-react-truechange/static/js/2.ea058a4d.chunk.js",
+    "static/js/2.ea058a4d.chunk.js.map": "/landing-page-react-truechange/static/js/2.ea058a4d.chunk.js.map",
+    "index.html": "/landing-page-react-truechange/index.html",
+    "static/css/2.20e376b6.chunk.css.map": "/landing-page-react-truechange/static/css/2.20e376b6.chunk.css.map",
+    "static/css/main.b71aea11.chunk.css.map": "/landing-page-react-truechange/static/css/main.b71aea11.chunk.css.map",
+    "static/js/2.ea058a4d.chunk.js.LICENSE.txt": "/landing-page-react-truechange/static/js/2.ea058a4d.chunk.js.LICENSE.txt",
+    "static/media/Facebook.07fb5c96.svg": "/landing-page-react-truechange/static/media/Facebook.07fb5c96.svg",
+    "static/media/Instagram.e6b37845.svg": "/landing-page-react-truechange/static/media/Instagram.e6b37845.svg",
+    "static/media/Twitter.382d7df9.svg": "/landing-page-react-truechange/static/media/Twitter.382d7df9.svg",
+    "static/media/global.scss": "/landing-page-react-truechange/static/media/arrow.dfa3d643.svg",
+    "static/media/banner-img.b94f135f.svg": "/landing-page-react-truechange/static/media/banner-img.b94f135f.svg",
+    "static/media/banner-img2.96aa2313.svg": "/landing-page-react-truechange/static/media/banner-img2.96aa2313.svg",
+    "static/media/check-green.0fbcd008.svg": "/landing-page-react-truechange/static/media/check-green.0fbcd008.svg",
+    "static/media/loading.9902c21a.svg": "/landing-page-react-truechange/static/media/loading.9902c21a.svg",
+    "static/media/location.a4285534.svg": "/landing-page-react-truechange/static/media/location.a4285534.svg",
+    "static/media/logo.e0bb06c4.svg": "/landing-page-react-truechange/static/media/logo.e0bb06c4.svg",
+    "static/media/server.323a2875.svg": "/landing-page-react-truechange/static/media/server.323a2875.svg",
+    "static/media/slick-theme.css": "/landing-page-react-truechange/static/media/slick.c94f7671.ttf",
+    "static/media/user.68a94e35.svg": "/landing-page-react-truechange/static/media/user.68a94e35.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa08f312.js",
+    "static/css/2.20e376b6.chunk.css",
+    "static/js/2.ea058a4d.chunk.js",
+    "static/css/main.b71aea11.chunk.css",
+    "static/js/main.f5508f6d.chunk.js"
+  ]
+}
