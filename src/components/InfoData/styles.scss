@@ -1,13 +1,25 @@
+@import '../../styles/global.mixins.scss';
+
 .info-data {
   display: flex;
   max-width: 1140px;
   height: 200px;
   margin: 100px auto 150px;
-  padding: 0 15px;
+  padding: 0 25px;
   border-radius: 10px;
-  // box-shadow: 0px 11px 44px -4px rgb(204 204 204 / 50%);
   position: relative;
   z-index: 1;
+  transition: all .3s;
+
+  @include md {
+    height: auto;
+    padding: 0 25px;
+    margin: 70px auto 70px;
+  }
+
+  @include sm {
+    margin: 25px auto 70px;
+  }
 
   &::after {
     content: "";
@@ -22,6 +34,12 @@
     opacity: 0.27;
     filter: blur(84px);
     border-radius: 10px;
+
+    @include md {
+      width: 87%;
+      height: 250px;
+      top: 50%;      
+    }
   }
 
   &__items {
@@ -33,6 +51,12 @@
     background: #fff;
     z-index: 1;
     border-radius: 10px;
+
+    @include md {
+      grid-template-columns: 1fr;
+      gap: 50px;
+      padding: 35px 0;
+    }
   }
 
   &__item {
@@ -53,6 +77,13 @@
     background: #EEEFF2;
     border-radius: 20px;
     transform: translate(0%, -50%);
+
+    @include md {
+      width: 186px;
+      height: 2px;
+      top: 145%;
+      left: inherit;
+    }
   }
 
   &__item:last-child::after {
@@ -63,11 +94,16 @@
     display: flex;
     flex-direction: column;
 
+    @include md {
+      width: 95px;
+    }
+
     span:first-child {
       color: var(--text-title);
       font-size: 25px;
       font-weight: 700;
       margin-bottom: 5px;
+      line-height: 2rem;
     }
 
     span:last-child {
