@@ -72,7 +72,7 @@ export function Blog() {
   return (
     <section className="blog-container">
       <div className="blog">
-        <div className="blog__title">Blog</div>
+        <header className="blog__title">Blog</header>
         <div className="blog__articles">
           {
             !loading ?
