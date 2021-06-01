@@ -16,14 +16,12 @@ interface BlogProps {
 
 export function Blog() {
 
-  const [loading, setLoading] = useState(true)
   const [list, setList] = useState<BlogProps[]>([])
 
   useEffect(() => {
     setTimeout(() => {
       api.get('photos')
       .then(resp => setList(resp.data.slice(0,12)))
-      setLoading(false)
     }, 1300)
   }, [])
 
@@ -75,7 +73,7 @@ export function Blog() {
         <header className="blog__title">Blog</header>
         <div className="blog__articles">
           {
-            !loading ?
+            list.length > 0 ?
               <Slider { ...settings }>
                 {blogList()}
               </Slider>
