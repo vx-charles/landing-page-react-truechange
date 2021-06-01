@@ -51,6 +51,10 @@
       margin-right: 50px;
       transition: border .2s;
 
+      @include sm {
+        padding: 40px 15px;
+      }
+
       &:hover {
         border-color: var(--red);
         cursor: pointer;
@@ -61,6 +65,10 @@
       margin-right: 35px;
       width: 100px;
       height: 100px;
+
+      @include sm {
+        margin-right: 15px;
+      }
     }
 
     &__content {
@@ -83,6 +91,10 @@
       color: var(--text-title);
       line-height: 30px;
       height: 90px;
+      
+      @include sm {
+        height: 120px;
+      }
     }
 
     &__loading {
