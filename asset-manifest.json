@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/landing-page-react-truechange/static/css/main.b71aea11.chunk.css",
-    "main.js": "/landing-page-react-truechange/static/js/main.f5508f6d.chunk.js",
-    "main.js.map": "/landing-page-react-truechange/static/js/main.f5508f6d.chunk.js.map",
+    "main.css": "/landing-page-react-truechange/static/css/main.cad02e1f.chunk.css",
+    "main.js": "/landing-page-react-truechange/static/js/main.7f6cccd3.chunk.js",
+    "main.js.map": "/landing-page-react-truechange/static/js/main.7f6cccd3.chunk.js.map",
     "runtime-main.js": "/landing-page-react-truechange/static/js/runtime-main.fa08f312.js",
     "runtime-main.js.map": "/landing-page-react-truechange/static/js/runtime-main.fa08f312.js.map",
     "static/css/2.20e376b6.chunk.css": "/landing-page-react-truechange/static/css/2.20e376b6.chunk.css",
@@ -10,27 +10,27 @@
     "static/js/2.ea058a4d.chunk.js.map": "/landing-page-react-truechange/static/js/2.ea058a4d.chunk.js.map",
     "index.html": "/landing-page-react-truechange/index.html",
     "static/css/2.20e376b6.chunk.css.map": "/landing-page-react-truechange/static/css/2.20e376b6.chunk.css.map",
-    "static/css/main.b71aea11.chunk.css.map": "/landing-page-react-truechange/static/css/main.b71aea11.chunk.css.map",
+    "static/css/main.cad02e1f.chunk.css.map": "/landing-page-react-truechange/static/css/main.cad02e1f.chunk.css.map",
     "static/js/2.ea058a4d.chunk.js.LICENSE.txt": "/landing-page-react-truechange/static/js/2.ea058a4d.chunk.js.LICENSE.txt",
-    "static/media/Facebook.07fb5c96.svg": "/landing-page-react-truechange/static/media/Facebook.07fb5c96.svg",
-    "static/media/Instagram.e6b37845.svg": "/landing-page-react-truechange/static/media/Instagram.e6b37845.svg",
-    "static/media/Twitter.382d7df9.svg": "/landing-page-react-truechange/static/media/Twitter.382d7df9.svg",
-    "static/media/global.scss": "/landing-page-react-truechange/static/media/arrow.dfa3d643.svg",
+    "static/media/Facebook.1936854e.svg": "/landing-page-react-truechange/static/media/Facebook.1936854e.svg",
+    "static/media/Instagram.473ea08d.svg": "/landing-page-react-truechange/static/media/Instagram.473ea08d.svg",
+    "static/media/Twitter.5a9b7df2.svg": "/landing-page-react-truechange/static/media/Twitter.5a9b7df2.svg",
+    "static/media/global.scss": "/landing-page-react-truechange/static/media/arrow.c3d049e6.svg",
     "static/media/banner-img.b94f135f.svg": "/landing-page-react-truechange/static/media/banner-img.b94f135f.svg",
-    "static/media/banner-img2.96aa2313.svg": "/landing-page-react-truechange/static/media/banner-img2.96aa2313.svg",
-    "static/media/check-green.0fbcd008.svg": "/landing-page-react-truechange/static/media/check-green.0fbcd008.svg",
-    "static/media/loading.9902c21a.svg": "/landing-page-react-truechange/static/media/loading.9902c21a.svg",
-    "static/media/location.a4285534.svg": "/landing-page-react-truechange/static/media/location.a4285534.svg",
-    "static/media/logo.e0bb06c4.svg": "/landing-page-react-truechange/static/media/logo.e0bb06c4.svg",
-    "static/media/server.323a2875.svg": "/landing-page-react-truechange/static/media/server.323a2875.svg",
+    "static/media/banner-img2.6282134a.svg": "/landing-page-react-truechange/static/media/banner-img2.6282134a.svg",
+    "static/media/check-green.6f6026b8.svg": "/landing-page-react-truechange/static/media/check-green.6f6026b8.svg",
+    "static/media/loading.91d82773.svg": "/landing-page-react-truechange/static/media/loading.91d82773.svg",
+    "static/media/location.47c345d7.svg": "/landing-page-react-truechange/static/media/location.47c345d7.svg",
+    "static/media/logo.8db9188e.svg": "/landing-page-react-truechange/static/media/logo.8db9188e.svg",
+    "static/media/server.e0db7a96.svg": "/landing-page-react-truechange/static/media/server.e0db7a96.svg",
     "static/media/slick-theme.css": "/landing-page-react-truechange/static/media/slick.c94f7671.ttf",
-    "static/media/user.68a94e35.svg": "/landing-page-react-truechange/static/media/user.68a94e35.svg"
+    "static/media/user.53f42e1c.svg": "/landing-page-react-truechange/static/media/user.53f42e1c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fa08f312.js",
     "static/css/2.20e376b6.chunk.css",
     "static/js/2.ea058a4d.chunk.js",
-    "static/css/main.b71aea11.chunk.css",
-    "static/js/main.f5508f6d.chunk.js"
+    "static/css/main.cad02e1f.chunk.css",
+    "static/js/main.7f6cccd3.chunk.js"
   ]
 }
