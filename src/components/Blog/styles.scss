@@ -6,6 +6,10 @@
 
   & .slick-initialized .slick-slide {
     padding: 0 25px;
+
+    @include sm {
+      padding: 0;
+    }
   }  
   
   .blog {
@@ -13,11 +17,15 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 185px 15px;
+    padding: 185px 25px;
     justify-content: center;
 
     @include md {
-      padding: 90px 15px 185px;
+      padding: 90px 25px 185px;
+    }
+
+    @include sm {
+      padding: 90px 25px 240px;
     }
 
     &__title {
@@ -26,6 +34,8 @@
       color: var(--text-title);
       text-align: center;
       margin-bottom: 50px;
+      background: none;
+      padding: 0;
     }
 
     &__articles {
@@ -63,6 +73,10 @@
       font-size: 18px;
       margin-bottom: 15px;
       color: var(--text-title);
+
+      @include sm {
+        line-height: 24px;
+      }
     }
 
     &__descArticle {

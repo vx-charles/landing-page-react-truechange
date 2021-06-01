@@ -113,6 +113,11 @@ a {
   @include sm {
     left: 0;
     text-align: center;
+    bottom: -95px;
+
+    li {
+      margin: 0 5px 10px;
+    }
   }
 }
 
@@ -149,7 +154,7 @@ a {
   z-index: 2;
 
   @include sm {
-    top: 145%;
+    top: 150%;
   }
 }
 
