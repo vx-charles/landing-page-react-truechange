@@ -65,6 +65,11 @@
     position: relative;
     width: 100%;
     justify-content: center;
+
+    img {
+      width: 55px;
+      height: 55px;
+    }
   }
 
   &__item::after {
