@@ -23,16 +23,16 @@ export function Header() {
       <nav className={active ? "menu active" : "menu"}>
         <ul className="menu__ul">
           <li>
-            <a href="/#" className="menu__link">Home</a>
+            <a href="/landing-page-react-truechange/#" className="menu__link">Home</a>
           </li>
           <li>
-            <a href="/#" className="menu__link">Blog</a>
+            <a href="/landing-page-react-truechange/#" className="menu__link">Blog</a>
           </li>
           <li>
-            <a href="/#" className="menu__link">Career</a>
+            <a href="/landing-page-react-truechange/#" className="menu__link">Career</a>
           </li>
           <li>
-            <a href="/#" className="menu__link">Contact</a>
+            <a href="/landing-page-react-truechange/#" className="menu__link">Contact</a>
           </li>
         </ul>
       </nav>
